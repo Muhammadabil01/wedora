@@ -1,0 +1,1 @@
+@props(['items'])<div class="faq-list" data-accordion>@foreach($items as $index=>$faq)<article class="faq-item"><h3><button type="button" aria-expanded="false" aria-controls="faq-{{ $index }}"><span>{{ $faq[0] }}</span><x-icon name="chevron" /></button></h3><div class="faq-answer" id="faq-{{ $index }}" hidden><p>{{ $faq[1] }}</p></div></article>@endforeach</div>

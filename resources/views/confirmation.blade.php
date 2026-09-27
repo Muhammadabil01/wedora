@@ -1,0 +1,4 @@
+@extends('layouts.app')
+@section('title','Pesanan Diterima — Wedora')
+@section('description','Permintaan website pernikahan Anda telah diterima Wedora.')
+@section('content')<section class="confirmation"><div class="confirmation-card"><div class="success-icon"><x-icon name="check"/></div><p class="eyebrow">Request received</p><h1>Thank you for choosing Wedora.</h1><p>Permintaan Anda telah kami terima. Tim kami akan menghubungi Anda melalui WhatsApp maksimal dalam 1×24 jam.</p><div class="confirmation-info"><span><small>Status</small><strong>Menunggu konfirmasi</strong></span><span><small>Estimasi respons</small><strong>1×24 jam</strong></span></div><div class="button-row"><a class="btn btn-primary" href="{{ url('/templates') }}">Kembali ke Templates</a><a class="btn btn-outline" href="https://wa.me/6281234567890"><x-icon name="message"/> Hubungi Kami</a></div></div></section>@endsection

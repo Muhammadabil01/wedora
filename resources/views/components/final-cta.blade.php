@@ -1,0 +1,1 @@
+<section class="final-cta"><div class="shell"><p class="eyebrow">Kisah Anda dimulai di sini</p><h2>Ready to tell your love story?</h2><p>Pilih desain yang terasa seperti Anda, lalu biarkan kami menyiapkan sisanya.</p><a class="btn btn-light btn-lg" href="{{ url('/templates') }}">Choose Your Template <x-icon name="arrow-right" /></a></div></section>
