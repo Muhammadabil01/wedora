@@ -18,4 +18,9 @@ return Application::configure(basePath: dirname(__DIR__))
         $exceptions->shouldRenderJsonWhen(
             fn (Request $request) => $request->is('api/*') || $request->expectsJson(),
         );
-    })->create();
+    })
+    ->booting(function () {
+        // Baris wajib untuk Vercel agar tidak Error 500 karena masalah cache read-only
+        config(['view.compiled' => '/tmp']);
+    })
+    ->create();
